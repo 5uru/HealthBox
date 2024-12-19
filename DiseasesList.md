@@ -81,4 +81,11 @@
 - Osteoporosis
 - Sickle Cell Anemia and Hemoglobin C Disease
 - Paget’s Disease
--
+
+## Skin Diseases
+- Acne
+- Mpox
+
+## Sexual Health
+- herpes
+- Syphilis
