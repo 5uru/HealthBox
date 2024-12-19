@@ -5,12 +5,14 @@ It includes articles, datasets, and other resources that were used to build the 
 - https://teamepoch.ai/portfolio-2/project-one-ephnc-lte3b
 - https://github.com/kiminya-raphael/Lacuna-Malaria-Detection-Challenge
 - https://grand-challenge.org/algorithms/
+- https://research.google/blog/helping-everyone-build-ai-for-healthcare-applications-with-open-foundation-models/
 - 
 
 
 ## Codes
 
 - https://github.com/TeamEpochGithub/MalariaDetectionChallenge
+- https://github.com/Google-Health/imaging-research
 - 
 
 
@@ -34,7 +36,8 @@ It includes articles, datasets, and other resources that were used to build the 
 - All: https://paperswithcode.com/datasets?mod=medical
 - Skin: https://www.kaggle.com/datasets/nazmussadat013/fitzpatrick-17k-dataset
 - Mpox: https://github.com/ShamsNafisaAli/Monkeypox-Skin-Lesion-Dataset-v2
-
+- Skin: https://github.com/google-research-datasets/scin
+- 
 
 ## Tools
 
