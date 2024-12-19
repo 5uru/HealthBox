@@ -28,7 +28,12 @@ It includes articles, datasets, and other resources that were used to build the 
 - All: https://portal.hubmapconsortium.org/search/datasets
 - Fetus: https://data.mendeley.com/datasets/n2rbrb9t4f/1
 - All: https://stanfordaimi.azurewebsites.net/
-- https://github.com/sfikas/medical-imaging-datasets
+- All: https://github.com/sfikas/medical-imaging-datasets
+- All: https://aimidatasetindex.stanford.edu/datasets-home
+- All: https://www.rsna.org/rsnai/ai-image-challenge
+- All: https://paperswithcode.com/datasets?mod=medical
+- Skin: https://www.kaggle.com/datasets/nazmussadat013/fitzpatrick-17k-dataset
+- Mpox: https://github.com/ShamsNafisaAli/Monkeypox-Skin-Lesion-Dataset-v2
 
 
 ## Tools
@@ -37,3 +42,8 @@ It includes articles, datasets, and other resources that were used to build the 
 
 
 ## Other resources
+- https://www.aidx-medical.com/
+- https://hehealth.ai/
+- https://www.thakaamed.ai/
+- https://www.lunit.io/en
+- https://www.minohealth.ai/
