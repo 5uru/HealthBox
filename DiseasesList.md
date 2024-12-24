@@ -13,6 +13,7 @@
 - Lung Cancer
 - Burkitt Lymphoma
 - Stomach Cancer
+- skin cancer
 
 ## Cardiovascular Diseases
 - Hypertensive Heart Disease
@@ -85,7 +86,16 @@
 ## Skin Diseases
 - Acne
 - Mpox
+- Vitiligo
+- Measles
+- Eczema
+- Tinea infections
+- Keloids
 
 ## Sexual Health
 - herpes
 - Syphilis
+- Gonorrhea
+- Human papillomavirus (HPV)
+- Chancroid
+- Chlamydia
