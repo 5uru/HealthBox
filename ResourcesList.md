@@ -6,14 +6,15 @@ It includes articles, datasets, and other resources that were used to build the 
 - https://github.com/kiminya-raphael/Lacuna-Malaria-Detection-Challenge
 - https://grand-challenge.org/algorithms/
 - https://research.google/blog/helping-everyone-build-ai-for-healthcare-applications-with-open-foundation-models/
-- 
+- Teeth: https://www.overjet.com/blog/cordental-group-launches-overjet-ai-to-help-its-practices-stand-out
 
 
 ## Codes
 
 - https://github.com/TeamEpochGithub/MalariaDetectionChallenge
 - https://github.com/Google-Health/imaging-research
-- 
+- Teeth: https://github.com/SerdarHelli/Segmentation-of-Teeth-in-Panoramic-X-ray-Image-Using-U-Net
+- Eyes: https://github.com/MostafaSmart/AI-models_eyesCare/tree/main
 
 
 ## Datasets
