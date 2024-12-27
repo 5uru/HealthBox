@@ -101,24 +101,30 @@
 - Chlamydia
 
 ## Eyes Diseases
-Cataract
-Glaucoma
-Age-related macular degeneration (AMD)
-Diabetic retinopathy
-Keratitis
-Dry eye syndrome
-Blepharitis
-Conjunctivitis
-Hypertensive retinopathy
-Retinal detachment
-Strabismus
-Pterygium
-Keratoconus
-Uveitis
-Central retinal vein occlusion (CRVO)
-Diplopia
-Optic neuropathy
-Bullous keratopathy
-Ptosis
-Hyphema
-Retinoblastoma  
+- Cataract
+- Glaucoma
+- Diabetic retinopathy
+- Keratitis
+- Dry eye syndrome
+- Blepharitis
+- Conjunctivitis
+- Hypertensive retinopathy
+- Retinal detachment
+- Strabismus
+- Pterygium
+- Keratoconus
+- Uveitis
+- Central retinal vein occlusion (CRVO)
+- Diplopia
+- Optic neuropathy
+- Bullous keratopathy
+- Ptosis
+- Hyphema
+- Retinoblastoma 
+
+## Teeth
+- Gingivitis
+- Periodontitis
+- Dental abscess
+- Halitosis (Bad breath)
+- Bruxism (Teeth grinding)
