@@ -15,7 +15,10 @@ It includes articles, datasets, and other resources that were used to build the 
 - https://github.com/Google-Health/imaging-research
 - Teeth: https://github.com/SerdarHelli/Segmentation-of-Teeth-in-Panoramic-X-ray-Image-Using-U-Net
 - Eyes: https://github.com/MostafaSmart/AI-models_eyesCare/tree/main
-
+- Skin: https://github.com/Asish2107/DL-Project/blob/main/notebook/Skin_Disease%20analysis.ipynb
+- Jax/Flax: https://github.com/NobuoTsukamoto/jax_examples/tree/main
+- https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2024.1438126/full
+- 
 
 ## Datasets
 
