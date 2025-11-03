@@ -1,4 +1,4 @@
 # HealthBox
-
+https://www.youtube.com/watch?v=vuempK2XYhw
 The health sector in Africa faces major challenges in the analysis of medical images. Rural areas are particularly hard hit by the high cost of sophisticated equipment and long waiting times for specialist diagnoses. Unstable Internet connectivity in many regions also prevents effective use of existing cloud solutions.
 To meet these challenges, the HealthBox project is proposing an innovative medical decision support solution based on artificial intelligence. This open source solution, running on a Raspberry Pi box, will be based on annotated public medical datasets from reputable sources such as Lacuna, TCIA, NIH Chest X-ray Dataset, MIMIC-CXR, Grand Challenge and Open-i. The system is designed to operate offline and ensure data confidentiality within healthcare facilities, making it particularly suited to the African context where connectivity may be limited.
