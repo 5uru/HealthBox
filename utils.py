@@ -2,11 +2,13 @@ from PIL import Image
 from ultralytics.engine.results import Results
 
 
-def crop_cells(image: Image.Image, results: Results, cell_class_id: int =1, padding: int = 20, output_size: int = None) -> list[Image.Image]:
+def crop_cells(image: Image.Image, results: Results, class_name: str, padding: int = 20, output_size: int = None) -> list[Image.Image]:
     """
     Crops the input image around each detected White Blood Cell (WBC).
 
     """
+    from healthbox.blood_stain.registry import CLASS_IDS
+    cell_class_id = CLASS_IDS[class_name]
     cell_crops = []
 
 
