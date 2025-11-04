@@ -16,12 +16,13 @@ st.set_page_config(
 
 
 # Initialize session state
-for key in ['uploaded_image', 'results', 'confidence_threshold']:
+for key in ['uploaded_image', 'results', 'confidence_threshold', 'confidence_show']:
     if key not in st.session_state:
         st.session_state[key] = None
 
 if st.session_state.confidence_threshold is None:
     st.session_state.confidence_threshold = 0.25
+    st.session_state.confidence_show = False
 
 for task_key in OPTIONAL_TASKS:
     if f"{task_key}_enabled" not in st.session_state:
@@ -40,7 +41,11 @@ def model_setting():
             help="Lower = more detections (may include false positives)"
     )
 
-    st.divider()
+    confidence_show = st.checkbox(
+            "Show Confidence Scores on Output Image",
+            value=st.session_state.confidence_show,
+            key="dialog_confidence_show"
+    )
     with st.popover("### 🔍 Optional Analysis Tasks"):
 
         # Checkboxes pour chaque tâche
@@ -55,6 +60,7 @@ def model_setting():
 
     if st.button("Apply Settings"):
         st.session_state.confidence_threshold = confidence_threshold
+        st.session_state.confidence_show = confidence_show
         for task_key, enabled in enabled_tasks.items():
             st.session_state[f"{task_key}_enabled"] = enabled
         st.rerun()
@@ -148,17 +154,10 @@ if st.session_state.results is not None:
             from ultralytics.engine.results import Boxes
             result_copy.boxes = Boxes(result_copy.boxes.data[mask], result_copy.orig_shape)
 
-        annotated_bgr = result_copy.plot()
+        annotated_bgr = result_copy.plot(conf=st.session_state.confidence_show)
         annotated_rgb = annotated_bgr[..., ::-1]  # BGR to RGB
         caption = f"Detected ({class_to_plot})" if class_to_plot != "All" else "All detected cells"
         st.image(annotated_rgb, caption=caption, width='stretch')
-
-        st.subheader("📋 Full Detection Details")
-        if detections:
-            st.dataframe(pd.DataFrame(detections), width='stretch')
-            st.success(f"✅ Detected **{len(detections)}** cells.")
-        else:
-            st.warning("No cells detected above the confidence threshold.")
 
 else:
     if uploaded_file:

@@ -1,9 +1,10 @@
 from ultralytics import YOLO
+from healthbox.blood_stain.base import Model
 
 Model_path = 'models/cell_detection.onnx'
 class_names = {"0": "RBC", "1": "WBC", "2": "Platelet"}
 
-class CellDetectionModel:
+class CellDetectionModel(Model):
     def __init__(self, model_path: str = Model_path, confidence: float = 0.25):
         self.model_path = model_path
         self.confidence = confidence
@@ -14,6 +15,10 @@ class CellDetectionModel:
         results = self.model(
                 source=image,  # path to test images
                 conf=self.confidence,        # confidence threshold
+                rect=True,                # use rectangular inference
+                augment=True,              # augmented inference
+                verbose=False,             # disable verbose output
+                show_conf=True               # disable showing confidence scores on output image
         )
 
         result = results[0]
