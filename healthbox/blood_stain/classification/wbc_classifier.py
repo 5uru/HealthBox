@@ -90,7 +90,7 @@ class WBCClassifier(Model):
             ) from e
 
     @torch.inference_mode()  # More efficient than torch.no_grad() for pure inference
-    def predict_(self, image: Union[Image.Image, str]) -> Dict[str, Any]:
+    def predict(self, image: Union[Image.Image, str]) -> Dict[str, Any]:
         """
         Run inference on a single WBC image.
 
