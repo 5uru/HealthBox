@@ -61,8 +61,7 @@ class MalariaClassifier(Model):
                 model=self.model,
                 use_test_size=True  # Ensures correct input resolution for inference
         )
-        transform = timm.data.create_transform(**data_config, is_training=False)
-        return transform
+        return timm.data.create_transform(**data_config, is_training=False)
 
     def _load_weights(self):
         """Load trained weights with robust error handling."""
