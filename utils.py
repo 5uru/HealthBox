@@ -1,5 +1,9 @@
 from PIL import Image
 from ultralytics.engine.results import Results
+import os
+import requests
+from urllib.parse import urlparse
+from tqdm import tqdm
 
 
 def crop_cells(image: Image.Image, results: Results, class_name: str, padding: int = 20, output_size: int = None) -> list[Image.Image]:

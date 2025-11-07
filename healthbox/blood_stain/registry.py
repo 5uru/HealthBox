@@ -5,8 +5,15 @@ from healthbox.blood_stain.classification.malaria_classifier import MalariaClass
 # Model registry: maps task → model instance
 MODEL_REGISTRY = {
         "detection": CellDetectionModel(confidence=0.25),
-        "wbc_classification": WBCClassifier(),
-        "malaria_classification": MalariaClassifier(),
+}
+
+
+DETECTION_REGISTRY = {
+        "cell_detection": {
+                "name": "Cell Detection",
+                "info": "Detects cells in an image.",
+                "model": CellDetectionModel(confidence=0.25),
+        },
 }
 
 CLASSIFIER_REGISTRY = {
