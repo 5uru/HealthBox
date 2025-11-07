@@ -2,6 +2,7 @@ import streamlit as st
 from PIL import Image
 import pandas as pd
 import copy
+from ultralytics.engine.results import Boxes
 
 from healthbox.blood_stain.blood_analysis import run_blood_analysis
 from healthbox.blood_stain.registry import OPTIONAL_TASKS
@@ -151,7 +152,7 @@ if st.session_state.results is not None:
             name_to_id = {"RBC": 0, "WBC": 1, "Platelet": 2}
             target_id = name_to_id[class_to_plot]
             mask = result_copy.boxes.cls == target_id
-            from ultralytics.engine.results import Boxes
+
             result_copy.boxes = Boxes(result_copy.boxes.data[mask], result_copy.orig_shape)
 
         annotated_bgr = result_copy.plot(conf=st.session_state.confidence_show)

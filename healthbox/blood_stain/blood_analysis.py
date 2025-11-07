@@ -34,6 +34,7 @@ def run_blood_analysis(image: Image.Image, conf_threshold: float = 0.25, enabled
 
             model = model_info["model"]
             model_results = [model.predict(crop) for crop in cropped_cells]
+            print(model_results)
             result = {
                     "name": model_info["name"],
                     "info": model_info["info"],
